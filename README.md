@@ -1,6 +1,6 @@
 # Bank
 
-This is a software implementation of a bank. No real bank should use this as it is mosly made up by my own reasoning and an attempt to apply proper software engineering on saturday nights when I'm bored.
+This is a software implementation of a bank. No real bank should use this as it is mosly made up by my own reasoning and an attempt to explore proper software engineering on saturday nights when I'm bored.
 
 # Goals
 
@@ -25,6 +25,11 @@ This list is more a 'Bas is bored again and wants something to tickle his brain'
   - Terraform
   - ArgoCD
     - Use syncwaves
+
+### Infra
+
+- Keycloak (for auth)
+- Postgres (for application data)
 
 # Inspirations
 

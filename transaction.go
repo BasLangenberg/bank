@@ -20,5 +20,6 @@ type TransactionServer struct {
 
 func (t *TransactionServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	transaction := strings.TrimPrefix(r.URL.Path, "/transactions/")
-	json.NewEncoder(w).Encode(t.store.GetTransaction(transaction))
+	w.WriteHeader(http.StatusNotFound)
+	_ = json.NewEncoder(w).Encode(t.store.GetTransaction(transaction))
 }

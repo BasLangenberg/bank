@@ -91,7 +91,7 @@ func assertResponseBody(t testing.TB, got, want int) {
 
 func parseResponseBody(w io.Reader) int {
 	var tran Transaction
-	json.NewDecoder(w).Decode(&tran)
+	_ = json.NewDecoder(w).Decode(&tran)
 
 	return tran.Amount
 }

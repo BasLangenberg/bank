@@ -21,6 +21,10 @@ This list is more a 'Bas is bored again and wants something to tickle his brain'
 - Use a Test Driven Development (kinda) method to develop this piece of software
 - Local tests should use Docker compose to test against real dependencies (Database, message queues...)
 - Allow a merge to main only after succesfull CI (Github Runners)
+- Include Grafana Cloud
+  - Monitoring with Prometheus
+  - Logs with Loki
+  - Traces with Tempo
 - Deployment target: Digital Ocean Kubernetes Engine
   - Terraform
   - ArgoCD

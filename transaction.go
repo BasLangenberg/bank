@@ -1,10 +1,24 @@
 package main
 
 import (
-	"fmt"
+	"encoding/json"
 	"net/http"
+	"strings"
 )
 
-func TransactionServer(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "100")
+type Transaction struct {
+	Amount int
+}
+
+type TransactionStore interface {
+	GetTransaction(id string) Transaction
+}
+
+type TransactionServer struct {
+	store TransactionStore
+}
+
+func (t *TransactionServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	transaction := strings.TrimPrefix(r.URL.Path, "/transactions/")
+	json.NewEncoder(w).Encode(t.store.GetTransaction(transaction))
 }

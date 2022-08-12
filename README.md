@@ -13,10 +13,12 @@ This list is more a 'Bas is bored again and wants something to tickle his brain'
 - Get the amount of money in a bank account
 - Do transaction monitoring
 - Do some sort of KYC from the banks perspective (Idea: Look into Camunda)
-- Write OpenAPI specification for external clients to interact with
+- Audit ALL THE THINGS
 
 ## Technical
 
+- Write OpenAPI specification for external clients to interact with
+  - Generate frontend server by using said API specification
 - No merge to main unless all test pass
 - Use a Test Driven Development (kinda) method to develop this piece of software
 - Local tests should use Docker compose to test against real dependencies (Database, message queues...)

@@ -8,8 +8,11 @@ This list is more a 'Bas is bored again and wants something to tickle his brain'
 
 ## Functional
 
+Should be the focus instead of all technical mumbo jumbo.
+
 - Open a bank account
 - Wire money to another bank account
+  - Figure out non-repudiation
 - Get the amount of money in a bank account
 - Do transaction monitoring
 - Do some sort of KYC from the banks perspective (Idea: Look into Camunda)

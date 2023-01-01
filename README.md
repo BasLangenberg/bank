@@ -14,15 +14,18 @@ Should be the focus instead of all technical mumbo jumbo.
 - Wire money to another bank account
   - Figure out non-repudiation
 - Get the amount of money in a bank account
+- Get the transactions against a bank account
 - Do transaction monitoring
 - Do some sort of KYC from the banks perspective (Idea: Look into Camunda)
 - Write OpenAPI specification for external clients to interact with
+- Use JavaScript to build a real front-end
 
 ## Technical
 
 - No merge to main unless all test pass
 - Use a Test Driven Development (kinda) method to develop this piece of software
 - Local tests should use Docker compose to test against real dependencies (Database, message queues...)
+- Local CI/CD with Dagger + precommit hook
 - Allow a merge to main only after succesfull CI (Github Runners)
 - Automate releases on Github
 - Include Grafana Cloud
